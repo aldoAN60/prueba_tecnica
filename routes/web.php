@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ixaya;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/', [ixaya::class,'index'])->name('index');
 Route::get("/products-filter",[ixaya::class,'best_selling_products_by_date'])->name('products.filter');
